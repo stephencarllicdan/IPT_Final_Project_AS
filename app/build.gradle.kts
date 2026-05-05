@@ -1,0 +1,58 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id("com.google.gms.google-services")
+}
+
+android {
+    namespace = "com.example.servicerequestapp"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.example.servicerequestapp"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    // ✅ BASIC (galing sa libs)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
+
+    // ✅ VOLLEY (API)
+    implementation("com.android.volley:volley:1.2.1")
+
+    // 🔥 IMPORTANT ADD (wala ka pa nito)
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.cardview:cardview:1.0.0")
+
+    // OPTIONAL (smooth UI + modern)
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+    // TESTS
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+}

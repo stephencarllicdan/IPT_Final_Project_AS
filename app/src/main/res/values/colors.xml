@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- BACKGROUND -->
+    <color name="bg">#F4F6F9</color>
+
+    <!-- PRIMARY COLORS -->
+    <color name="primary">#1E3A8A</color>
+    <color name="primaryDark">#142C6E</color>
+    <color name="primaryLight">#93C5FD</color>
+
+    <!-- ACCENT -->
+    <color name="accent">#0EA5A4</color>
+
+    <!-- SUCCESS -->
+    <color name="success">#16A34A</color>
+
+    <!-- 🔥 WARNING (PENDING) -->
+    <color name="warning">#F59E0B</color> <!-- amber/orange -->
+
+    <!-- 🔥 DANGER (LOGOUT / DELETE) -->
+    <color name="danger">#DC2626</color> <!-- red -->
+
+    <!-- TEXT -->
+    <color name="textPrimary">#1F2937</color>
+    <color name="textSecondary">#6B7280</color>
+
+    <!-- CARD -->
+    <color name="card">#FFFFFF</color>
+
+</resources>

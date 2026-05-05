@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ServiceRequestApp</string>
+
+    <string name="title">Service Requests</string>
+    <string name="search_hint">Search requests...</string>
+    <string name="go">Go</string>
+    <string name="dashboard">View Dashboard</string>
+    <string name="input_hint">Enter new request...</string>
+    <string name="add">Add Request</string>
+    <string name="list_label">Your Requests</string>
+</resources>
